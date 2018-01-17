@@ -1,14 +1,8 @@
 Rails.application.routes.draw do
-  get 'static_pages/home'
-
-  get 'static_pages/about'
-
-  get 'static_pages/contact'
-
   root 'static_pages#home'
-
   get  '/hire',    to: 'static_pages#hire'
   get  '/about',   to: 'static_pages#about'
-  get  '/contact', to: 'static_pages#contact'
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  get  '/contact', to: 'contact#index'
+  resources :contact, only: [:index, :new, :create]  
+
 end

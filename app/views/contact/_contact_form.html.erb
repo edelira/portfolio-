@@ -1,0 +1,24 @@
+<%= form_for @contact, url: contact_path, remote: true do |f| %>
+  <div class="col-sm-6 form-group">
+    <%= f.text_field  :name, required: true,placeholder: "Name", :class=>"form-control"%>
+  </div>
+  <div class="col-sm-6 form-group">
+    <%= f.text_field :email, required: true,placeholder: "Email", :class=>"form-control"%>  
+  </div>
+  <div class = "col-sm-12 form-group">
+    <%= f.text_field :subject, required: true,placeholder: "Subject", :class=> "form-control"%>
+  </div>
+  <div class= "col-sm-12 ">
+  <%= f.text_area :message, size: "5x4", required: true, placeholder: "Send a message to Eduardo.", :class=>"form-control"%></br>
+  </div>
+  <div class= "hidden">
+    <%= f.label :nickname %>
+    <%= f.text_field :nickname, :hint => 'Leave this field blank!' %>
+  </div>
+  <div class="col-sm-12 form-group">
+    <%= f.submit 'Send Message', class: 'btn btn-default pull-left' %><br>
+  </div>
+  <div class="col-md-12" id="flash-message">
+    <%= render 'flash' %>
+  </div>
+<% end %>    
