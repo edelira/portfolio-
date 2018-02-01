@@ -6,6 +6,8 @@ html,body {
   line-height: 1.8;
   color: #f5f6f7;
   height: 100%;
+  position: relative;
+
 }
 p {font-size: 16px;}
 .margin {margin-bottom: 45px;}
@@ -26,10 +28,11 @@ p {font-size: 16px;}
   color: #fff;
 }
 .container-fluid {
-  padding-top: 30px;
+  padding-top: 90px;
   padding-bottom: 70px;
 }
 .navbar {
+  width: 100%;
   padding-top: 15px;
   padding-bottom: 15px;
   border: 0;
@@ -37,6 +40,7 @@ p {font-size: 16px;}
   margin-bottom: 0;
   font-size: 12px;
   letter-spacing: 5px;
+  
 }
 .navbar-nav  li a:hover {
     color: #E1F2FE !important;
@@ -62,4 +66,7 @@ p {font-size: 16px;}
   font-size:15pt;
   line-height: 1.2;
 
+}
+.main {
+    margin-top: 60px; 
 }
