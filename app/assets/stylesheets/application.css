@@ -26,6 +26,8 @@ p {font-size: 16px;}
 .bg-4 { 
   background-color: #171738; 
   color: #fff;
+  padding-top: 40px !important;
+  padding-bottom: 30px !important;
 }
 .bg-5 { 
   background-color: #C1CAD6;
