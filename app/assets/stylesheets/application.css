@@ -12,20 +12,24 @@ html,body {
 p {font-size: 16px;}
 .margin {margin-bottom: 45px;}
 .bg-1 { 
-  background-color: #8AB9B5; /* Green */
+  background-color: #8AB9B5;
   color: #ffffff;
 }
 .bg-2 { 
-  background-color: #2C4251; /* Dark Blue */
+  background-color: #2C4251; 
   color: #ffffff;
 }
 .bg-3 { 
-  background-color: #EAE6E5; /* White */
+  background-color: #EAE6E5;
   color: #555555;
 }
 .bg-4 { 
-  background-color: #171738; /* Black Gray */
+  background-color: #171738; 
   color: #fff;
+}
+.bg-5 { 
+  background-color: #C1CAD6;
+  color: #555;
 }
 .container-fluid {
   padding-top: 90px;
